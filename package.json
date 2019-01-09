@@ -3,7 +3,7 @@
   "displayName": "Rails Extension",
   "description": "A simple extension focused on helping development of ruby on rails apps.",
   "version": "0.0.1",
-  "publisher": "Runtime Revolution",
+  "publisher": "runtime-revolution",
   "icon": "images/logo.png",
   "license": "MIT",
   "repository": {
