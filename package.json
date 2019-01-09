@@ -1,0 +1,70 @@
+{
+  "name": "rails-extension",
+  "displayName": "Rails Extension",
+  "description": "A simple extension focused on helping development of ruby on rails apps.",
+  "version": "0.0.1",
+  "publisher": "Runtime Revolution",
+  "icon": "images/logo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:Gemfile"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ruby-on-rails",
+          "title": "Ruby On Rails",
+          "icon": "images/logo.png"
+        }
+      ]
+    },
+    "views": {
+      "ruby-on-rails": [
+        {
+          "id": "ruby-on-rails.rakeTaskExplorer:ruby-on-rails",
+          "name": "Tasks",
+          "when": "workspaceIsRails"
+        },
+        {
+          "id": "ruby-on-rails.rakeRoutesExplorer:ruby-on-rails",
+          "name": "Routes",
+          "when": "workspaceIsRails"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "install-extension": "(rm *.vsix || true) && vsce package && code --install-extension *.vsix"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1",
+    "vsce": "^1.49.2",
+    "vscode": "^1.1.6"
+  }
+}
