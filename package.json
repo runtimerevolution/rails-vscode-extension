@@ -6,10 +6,7 @@
   "publisher": "runtime-revolution",
   "icon": "images/logo.png",
   "license": "MIT",
-  "repository": {
-    "type": "",
-    "url": ""
-  },
+  "repository": "https://github.com/runtimerevolution/rails-vscode-extension",
   "engines": {
     "vscode": "^1.27.0"
   },
