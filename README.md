@@ -16,22 +16,22 @@ Listing the routes
 
 ### 0.0.1
 
-Initial Release
+- **feat** Lists and runs rake tasks
+
+- **feat** Lists routes
 
 # Contributing
 
-### Installing locally
-First make sure you have everything installed by running:
-```
-yarn install
-```
-Then package the extension by running:
-```
-yarn vsce package
-```
-And finally install the generated .vsix file:
-```
-code --install-extension NAME_OF_THE_VSIXFILE
-```
+1. Fork it <https://github.com/runtimerevolution/rails-vscode-extension/fork>
+2. Create your feature branch `git checkout -b my-new-feature`
+3. Commit your changes `git commit -am 'Add some feature'`
+4. Push to the branch `git push origin my-new-feature`
+5. Create a new Pull Request
+
+# Contributors
+
+- [@laginha87](https://github.com/laginha87) Filipe Correia - mantainer
+
+
 
  Icon made by bqlqn from www.flaticon.com
